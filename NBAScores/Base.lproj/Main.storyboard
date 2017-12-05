@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NBAScores" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="EaC-Fj-hE3">
+                                <rect key="frame" x="70" y="20" width="236" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="sWL-xa-q5c"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKL-9m-NU1">
+                                <rect key="frame" x="110" y="538" width="155" height="71"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="xOu-IE-Rm1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Go!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8f7-ud-Yus"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NBA Scores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHJ-7B-rP3">
+                                <rect key="frame" x="95.5" y="161" width="185" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zQx-eb-0uf">
+                                <rect key="frame" x="0.0" y="314" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="534137048.36365801">
+                                    <!--2017-12-05 03:24:08 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-1709384400">
+                                    <!--1946-11-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="567946800">
+                                    <!--2018-12-31 11:00:00 +0000-->
+                                </date>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="highlightsToday" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="datePickerChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zgv-Bu-NQ0"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Games for Any Date:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsV-pj-h0J">
+                                <rect key="frame" x="50" y="224" width="275" height="82"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.27271597689999999" green="0.42812668780000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zQx-eb-0uf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6fi-P0-CL2"/>
+                            <constraint firstItem="zQx-eb-0uf" firstAttribute="top" secondItem="fHJ-7B-rP3" secondAttribute="bottom" constant="110" id="DXo-3W-tcN"/>
+                            <constraint firstItem="PsV-pj-h0J" firstAttribute="top" secondItem="EaC-Fj-hE3" secondAttribute="bottom" constant="71" id="HuY-rf-ngU"/>
+                            <constraint firstAttribute="trailing" secondItem="zQx-eb-0uf" secondAttribute="trailing" id="Mu2-sY-DBP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QKL-9m-NU1" secondAttribute="bottom" constant="58" id="PaI-XU-c37"/>
+                            <constraint firstItem="fHJ-7B-rP3" firstAttribute="top" secondItem="EaC-Fj-hE3" secondAttribute="bottom" constant="8" symbolic="YES" id="VhQ-t0-Cml"/>
+                            <constraint firstItem="zQx-eb-0uf" firstAttribute="top" secondItem="PsV-pj-h0J" secondAttribute="bottom" constant="8" symbolic="YES" id="WbT-Bl-2jy"/>
+                            <constraint firstItem="EaC-Fj-hE3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Y1I-Vg-bHm"/>
+                            <constraint firstItem="zQx-eb-0uf" firstAttribute="centerX" secondItem="QKL-9m-NU1" secondAttribute="centerX" id="YnE-vQ-H5C"/>
+                            <constraint firstItem="EaC-Fj-hE3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aaa-vo-OS8"/>
+                            <constraint firstItem="EaC-Fj-hE3" firstAttribute="centerX" secondItem="PsV-pj-h0J" secondAttribute="centerX" id="ahg-b9-Y95"/>
+                            <constraint firstItem="EaC-Fj-hE3" firstAttribute="centerX" secondItem="fHJ-7B-rP3" secondAttribute="centerX" id="gp1-hd-bzb"/>
+                            <constraint firstItem="QKL-9m-NU1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="kpb-3N-HHp"/>
+                            <constraint firstItem="PsV-pj-h0J" firstAttribute="centerX" secondItem="zQx-eb-0uf" secondAttribute="centerX" id="oOA-Ww-Lgz"/>
+                            <constraint firstItem="PsV-pj-h0J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="uW0-XU-jR1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="DatePicker" destination="zQx-eb-0uf" id="Bhx-nV-rQ2"/>
+                        <outlet property="FindGamesButton" destination="QKL-9m-NU1" id="MEM-Xk-C4d"/>
+                        <segue destination="Ove-tl-Tk2" kind="presentation" identifier="ToListVC" id="wxm-qT-RjN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="34"/>
+        </scene>
+        <!--ListVC-->
+        <scene sceneID="XR8-OB-dTZ">
+            <objects>
+                <viewController id="Ove-tl-Tk2" customClass="ListVC" customModule="NBAScores" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FYK-HR-0m7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y3S-ev-C6J">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="487"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameCell" textLabel="iZo-va-85O" detailTextLabel="mhD-J0-VkZ" style="IBUITableViewCellStyleSubtitle" id="MZ5-EV-Pgs">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MZ5-EV-Pgs" id="6Pw-bT-kS3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iZo-va-85O">
+                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mhD-J0-VkZ">
+                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6A-GA-z5f">
+                                <rect key="frame" x="0.0" y="487" width="375" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="Ove-tl-Tk2" eventType="touchUpInside" id="E8f-NM-r5T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Web-xn-d00"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backButton" destination="A6A-GA-z5f" id="mfu-Km-RUD"/>
+                        <outlet property="tableView" destination="y3S-ev-C6J" id="fw8-Cx-lAC"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="GoBack" id="e4c-VV-7pl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3S-gQ-E8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1692" y="18"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball" width="170" height="170"/>
+    </resources>
+</document>

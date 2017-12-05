@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6166AE8309F02E4EE4DA1D2E /* Pods_NBAScores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D44A71433126DC3524B646D /* Pods_NBAScores.framework */; };
+		C1EEF24D1FD511DD00D12562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EEF24C1FD511DD00D12562 /* AppDelegate.swift */; };
+		C1EEF24F1FD511DD00D12562 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EEF24E1FD511DD00D12562 /* ViewController.swift */; };
+		C1EEF2521FD511DD00D12562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EEF2501FD511DD00D12562 /* Main.storyboard */; };
+		C1EEF2541FD511DD00D12562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1EEF2531FD511DD00D12562 /* Assets.xcassets */; };
+		C1EEF2571FD511DD00D12562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EEF2551FD511DD00D12562 /* LaunchScreen.storyboard */; };
+		C1EEF2621FD511DE00D12562 /* NBAScoresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EEF2611FD511DE00D12562 /* NBAScoresTests.swift */; };
+		C1EEF26D1FD511DE00D12562 /* NBAScoresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EEF26C1FD511DE00D12562 /* NBAScoresUITests.swift */; };
+		C1EEF27D1FD69E9000D12562 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EEF27C1FD69E9000D12562 /* ListVC.swift */; };
+		C1EEF27F1FD6B23000D12562 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EEF27E1FD6B23000D12562 /* Constants.swift */; };
+		C1EEF2811FD6B2FA00D12562 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EEF2801FD6B2FA00D12562 /* GameData.swift */; };
+		C1EEF2831FD743C900D12562 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EEF2821FD743C900D12562 /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1EEF25E1FD511DE00D12562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1EEF2411FD511DD00D12562 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1EEF2481FD511DD00D12562;
+			remoteInfo = NBAScores;
+		};
+		C1EEF2691FD511DE00D12562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1EEF2411FD511DD00D12562 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1EEF2481FD511DD00D12562;
+			remoteInfo = NBAScores;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D44A71433126DC3524B646D /* Pods_NBAScores.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBAScores.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D51F9276F5197836EC17A5 /* Pods-NBAScores.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBAScores.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBAScores/Pods-NBAScores.release.xcconfig"; sourceTree = "<group>"; };
+		C1EEF2491FD511DD00D12562 /* NBAScores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBAScores.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1EEF24C1FD511DD00D12562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1EEF24E1FD511DD00D12562 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1EEF2511FD511DD00D12562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1EEF2531FD511DD00D12562 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1EEF2561FD511DD00D12562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1EEF2581FD511DD00D12562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1EEF25D1FD511DE00D12562 /* NBAScoresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBAScoresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1EEF2611FD511DE00D12562 /* NBAScoresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAScoresTests.swift; sourceTree = "<group>"; };
+		C1EEF2631FD511DE00D12562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1EEF2681FD511DE00D12562 /* NBAScoresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBAScoresUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1EEF26C1FD511DE00D12562 /* NBAScoresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAScoresUITests.swift; sourceTree = "<group>"; };
+		C1EEF26E1FD511DE00D12562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1EEF27C1FD69E9000D12562 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		C1EEF27E1FD6B23000D12562 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C1EEF2801FD6B2FA00D12562 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		C1EEF2821FD743C900D12562 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C581B3EAA0D919A27B024805 /* Pods-NBAScores.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBAScores.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBAScores/Pods-NBAScores.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1EEF2461FD511DD00D12562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6166AE8309F02E4EE4DA1D2E /* Pods_NBAScores.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1EEF25A1FD511DE00D12562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1EEF2651FD511DE00D12562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		727068F2A486D14F1B53B911 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D44A71433126DC3524B646D /* Pods_NBAScores.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC01228C5653D96DABB9ADA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C581B3EAA0D919A27B024805 /* Pods-NBAScores.debug.xcconfig */,
+				A8D51F9276F5197836EC17A5 /* Pods-NBAScores.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1EEF2401FD511DD00D12562 = {
+			isa = PBXGroup;
+			children = (
+				C1EEF24B1FD511DD00D12562 /* NBAScores */,
+				C1EEF2601FD511DE00D12562 /* NBAScoresTests */,
+				C1EEF26B1FD511DE00D12562 /* NBAScoresUITests */,
+				C1EEF24A1FD511DD00D12562 /* Products */,
+				AC01228C5653D96DABB9ADA5 /* Pods */,
+				727068F2A486D14F1B53B911 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1EEF24A1FD511DD00D12562 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1EEF2491FD511DD00D12562 /* NBAScores.app */,
+				C1EEF25D1FD511DE00D12562 /* NBAScoresTests.xctest */,
+				C1EEF2681FD511DE00D12562 /* NBAScoresUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1EEF24B1FD511DD00D12562 /* NBAScores */ = {
+			isa = PBXGroup;
+			children = (
+				C1EEF24C1FD511DD00D12562 /* AppDelegate.swift */,
+				C1EEF24E1FD511DD00D12562 /* ViewController.swift */,
+				C1EEF27E1FD6B23000D12562 /* Constants.swift */,
+				C1EEF2801FD6B2FA00D12562 /* GameData.swift */,
+				C1EEF27C1FD69E9000D12562 /* ListVC.swift */,
+				C1EEF2821FD743C900D12562 /* DetailViewController.swift */,
+				C1EEF2501FD511DD00D12562 /* Main.storyboard */,
+				C1EEF2531FD511DD00D12562 /* Assets.xcassets */,
+				C1EEF2551FD511DD00D12562 /* LaunchScreen.storyboard */,
+				C1EEF2581FD511DD00D12562 /* Info.plist */,
+			);
+			path = NBAScores;
+			sourceTree = "<group>";
+		};
+		C1EEF2601FD511DE00D12562 /* NBAScoresTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1EEF2611FD511DE00D12562 /* NBAScoresTests.swift */,
+				C1EEF2631FD511DE00D12562 /* Info.plist */,
+			);
+			path = NBAScoresTests;
+			sourceTree = "<group>";
+		};
+		C1EEF26B1FD511DE00D12562 /* NBAScoresUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1EEF26C1FD511DE00D12562 /* NBAScoresUITests.swift */,
+				C1EEF26E1FD511DE00D12562 /* Info.plist */,
+			);
+			path = NBAScoresUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1EEF2481FD511DD00D12562 /* NBAScores */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1EEF2711FD511DE00D12562 /* Build configuration list for PBXNativeTarget "NBAScores" */;
+			buildPhases = (
+				F58D8BA2AF1700D0DA2E2860 /* [CP] Check Pods Manifest.lock */,
+				C1EEF2451FD511DD00D12562 /* Sources */,
+				C1EEF2461FD511DD00D12562 /* Frameworks */,
+				C1EEF2471FD511DD00D12562 /* Resources */,
+				46059B695A2F69F35940F8EF /* [CP] Embed Pods Frameworks */,
+				CD000C0F54BF8F0CCEBD5567 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBAScores;
+			productName = NBAScores;
+			productReference = C1EEF2491FD511DD00D12562 /* NBAScores.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1EEF25C1FD511DE00D12562 /* NBAScoresTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1EEF2741FD511DE00D12562 /* Build configuration list for PBXNativeTarget "NBAScoresTests" */;
+			buildPhases = (
+				C1EEF2591FD511DE00D12562 /* Sources */,
+				C1EEF25A1FD511DE00D12562 /* Frameworks */,
+				C1EEF25B1FD511DE00D12562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1EEF25F1FD511DE00D12562 /* PBXTargetDependency */,
+			);
+			name = NBAScoresTests;
+			productName = NBAScoresTests;
+			productReference = C1EEF25D1FD511DE00D12562 /* NBAScoresTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1EEF2671FD511DE00D12562 /* NBAScoresUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1EEF2771FD511DE00D12562 /* Build configuration list for PBXNativeTarget "NBAScoresUITests" */;
+			buildPhases = (
+				C1EEF2641FD511DE00D12562 /* Sources */,
+				C1EEF2651FD511DE00D12562 /* Frameworks */,
+				C1EEF2661FD511DE00D12562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1EEF26A1FD511DE00D12562 /* PBXTargetDependency */,
+			);
+			name = NBAScoresUITests;
+			productName = NBAScoresUITests;
+			productReference = C1EEF2681FD511DE00D12562 /* NBAScoresUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1EEF2411FD511DD00D12562 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Chris Chiang";
+				TargetAttributes = {
+					C1EEF2481FD511DD00D12562 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					C1EEF25C1FD511DE00D12562 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1EEF2481FD511DD00D12562;
+					};
+					C1EEF2671FD511DE00D12562 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1EEF2481FD511DD00D12562;
+					};
+				};
+			};
+			buildConfigurationList = C1EEF2441FD511DD00D12562 /* Build configuration list for PBXProject "NBAScores" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1EEF2401FD511DD00D12562;
+			productRefGroup = C1EEF24A1FD511DD00D12562 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1EEF2481FD511DD00D12562 /* NBAScores */,
+				C1EEF25C1FD511DE00D12562 /* NBAScoresTests */,
+				C1EEF2671FD511DE00D12562 /* NBAScoresUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1EEF2471FD511DD00D12562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1EEF2571FD511DD00D12562 /* LaunchScreen.storyboard in Resources */,
+				C1EEF2541FD511DD00D12562 /* Assets.xcassets in Resources */,
+				C1EEF2521FD511DD00D12562 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1EEF25B1FD511DE00D12562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1EEF2661FD511DE00D12562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46059B695A2F69F35940F8EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NBAScores/Pods-NBAScores-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBAScores/Pods-NBAScores-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD000C0F54BF8F0CCEBD5567 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBAScores/Pods-NBAScores-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F58D8BA2AF1700D0DA2E2860 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NBAScores-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1EEF2451FD511DD00D12562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1EEF27D1FD69E9000D12562 /* ListVC.swift in Sources */,
+				C1EEF2811FD6B2FA00D12562 /* GameData.swift in Sources */,
+				C1EEF24F1FD511DD00D12562 /* ViewController.swift in Sources */,
+				C1EEF2831FD743C900D12562 /* DetailViewController.swift in Sources */,
+				C1EEF24D1FD511DD00D12562 /* AppDelegate.swift in Sources */,
+				C1EEF27F1FD6B23000D12562 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1EEF2591FD511DE00D12562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1EEF2621FD511DE00D12562 /* NBAScoresTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1EEF2641FD511DE00D12562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1EEF26D1FD511DE00D12562 /* NBAScoresUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1EEF25F1FD511DE00D12562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1EEF2481FD511DD00D12562 /* NBAScores */;
+			targetProxy = C1EEF25E1FD511DE00D12562 /* PBXContainerItemProxy */;
+		};
+		C1EEF26A1FD511DE00D12562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1EEF2481FD511DD00D12562 /* NBAScores */;
+			targetProxy = C1EEF2691FD511DE00D12562 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1EEF2501FD511DD00D12562 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1EEF2511FD511DD00D12562 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1EEF2551FD511DD00D12562 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1EEF2561FD511DD00D12562 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1EEF26F1FD511DE00D12562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1EEF2701FD511DE00D12562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1EEF2721FD511DE00D12562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C581B3EAA0D919A27B024805 /* Pods-NBAScores.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F53KRL47J;
+				INFOPLIST_FILE = NBAScores/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ChrisChiang.NBAScores;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1EEF2731FD511DE00D12562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D51F9276F5197836EC17A5 /* Pods-NBAScores.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F53KRL47J;
+				INFOPLIST_FILE = NBAScores/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ChrisChiang.NBAScores;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C1EEF2751FD511DE00D12562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F53KRL47J;
+				INFOPLIST_FILE = NBAScoresTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ChrisChiang.NBAScoresTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBAScores.app/NBAScores";
+			};
+			name = Debug;
+		};
+		C1EEF2761FD511DE00D12562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F53KRL47J;
+				INFOPLIST_FILE = NBAScoresTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ChrisChiang.NBAScoresTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBAScores.app/NBAScores";
+			};
+			name = Release;
+		};
+		C1EEF2781FD511DE00D12562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F53KRL47J;
+				INFOPLIST_FILE = NBAScoresUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ChrisChiang.NBAScoresUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NBAScores;
+			};
+			name = Debug;
+		};
+		C1EEF2791FD511DE00D12562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F53KRL47J;
+				INFOPLIST_FILE = NBAScoresUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ChrisChiang.NBAScoresUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NBAScores;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1EEF2441FD511DD00D12562 /* Build configuration list for PBXProject "NBAScores" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1EEF26F1FD511DE00D12562 /* Debug */,
+				C1EEF2701FD511DE00D12562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1EEF2711FD511DE00D12562 /* Build configuration list for PBXNativeTarget "NBAScores" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1EEF2721FD511DE00D12562 /* Debug */,
+				C1EEF2731FD511DE00D12562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1EEF2741FD511DE00D12562 /* Build configuration list for PBXNativeTarget "NBAScoresTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1EEF2751FD511DE00D12562 /* Debug */,
+				C1EEF2761FD511DE00D12562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1EEF2771FD511DE00D12562 /* Build configuration list for PBXNativeTarget "NBAScoresUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1EEF2781FD511DE00D12562 /* Debug */,
+				C1EEF2791FD511DE00D12562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1EEF2411FD511DD00D12562 /* Project object */;
+}
