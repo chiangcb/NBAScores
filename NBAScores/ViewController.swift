@@ -38,10 +38,14 @@ class ViewController: UIViewController {
     }
     func getGameData(b: String) {
         var homeTeam = ""
+        var homeTeamInitials = ""
+        var awayTeamInitials = ""
         var awayTeam = ""
         var homeScore = 0
         var awayScore = 0
-        var gdata: GameData = GameData(homeTeam: "a",awayTeam: "z",homeScore: 3,awayScore: 4)
+        var gdata: GameData! = nil
+        var quarterScoreHome: ScoreByQuarter = ScoreByQuarter(q1: 0, q2: 0, q3: 0, q4: 0, OT: 0)
+        var quarterScoreAway: ScoreByQuarter = ScoreByQuarter(q1: 0, q2: 0, q3: 0, q4: 0, OT: 0)
         let nbaURL = urlBase + "?GameDate=" + b + "&LeagueID=00&DayOffset=0"
         Alamofire.request(nbaURL).responseJSON { response in
             switch response.result {
@@ -49,15 +53,25 @@ class ViewController: UIViewController {
                 let json = JSON(value)
                 let numberOfGames: Int = json["resultSets"][0]["rowSet"].count
                 for i in 0...numberOfGames-1 {
+                    homeTeamInitials = self.mappedValues2(teamName: String(describing: json["resultSets"][0]["rowSet"][i][6]))
+                    awayTeamInitials = self.mappedValues2(teamName: String(describing: json["resultSets"][0]["rowSet"][i][7]))
                     homeTeam = self.mappedValues(teamName: String(describing: json["resultSets"][0]["rowSet"][i][6]))
                     awayTeam = self.mappedValues(teamName: String(describing: json["resultSets"][0]["rowSet"][i][7]))
                     homeScore = json["resultSets"][1]["rowSet"][2*i][21].intValue
                     awayScore = json["resultSets"][1]["rowSet"][2*i + 1][21].intValue
+                    quarterScoreHome.q1 = json["resultSets"][1]["rowSet"][2*i][7].intValue
+                    quarterScoreHome.q2 = json["resultSets"][1]["rowSet"][2*i][8].intValue
+                    quarterScoreHome.q3 = json["resultSets"][1]["rowSet"][2*i][9].intValue
+                    quarterScoreHome.q4 = json["resultSets"][1]["rowSet"][2*i][10].intValue
+                    quarterScoreAway.q1 = json["resultSets"][1]["rowSet"][2*i + 1][7].intValue
+                    quarterScoreAway.q2 = json["resultSets"][1]["rowSet"][2*i + 1][8].intValue
+                    quarterScoreAway.q3 = json["resultSets"][1]["rowSet"][2*i + 1][9].intValue
+                    quarterScoreAway.q4 = json["resultSets"][1]["rowSet"][2*i + 1][10].intValue
                     print(homeTeam)
                     print(awayTeam)
                     print(homeScore)
                     print(awayScore)
-                    gdata = GameData(homeTeam: homeTeam, awayTeam: awayTeam, homeScore: homeScore, awayScore: awayScore)
+                    gdata = GameData(homeTeam: homeTeam, awayTeam: awayTeam, homeScore: homeScore, awayScore: awayScore, quarterScoreHome: quarterScoreHome, quarterScoreAway: quarterScoreAway, homeTeamInitials: homeTeamInitials, awayTeamInitials: awayTeamInitials)
                     self.gamesArray.append(gdata)
                     print(self.gamesArray)
                 }
@@ -82,10 +96,105 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ToListVC" {
             let destination = segue.destination as! ListVC
+            // let destination = dvc.topViewController as! ListVC
             print(gamesArray.count)
             destination.gamesArray = gamesArray
-            
+            gamesArray = [GameData]()
         }
+    }
+    func mappedValues2(teamName: String) -> String {
+        var newTeamName: String = ""
+        if teamName == "1610612737" {
+            newTeamName = "ATL"
+        }
+        else if teamName == "1610612738" {
+            newTeamName = "BOS"
+        }
+        else if teamName == "1610612751" {
+            newTeamName = "BKN"
+        }
+        else if teamName == "1610612766" {
+            newTeamName = "CHA"
+        }
+        else if teamName == "1610612741" {
+            newTeamName = "CHI"
+        }
+        else if teamName == "1610612739" {
+            newTeamName = "CLE"
+        }
+        else if teamName == "1610612742" {
+            newTeamName = "DAL"
+        }
+        else if teamName == "1610612743" {
+            newTeamName = "DEN"
+        }
+        else if teamName == "1610612765" {
+            newTeamName = "DET"
+        }
+        else if teamName == "1610612744" {
+            newTeamName = "GSW"
+        }
+        else if teamName == "1610612745" {
+            newTeamName = "HOU"
+        }
+        else if teamName == "1610612754" {
+            newTeamName = "IND"
+        }
+        else if teamName == "1610612746" {
+            newTeamName = "LAC"
+        }
+        else if teamName == "1610612747" {
+            newTeamName = "LAL"
+        }
+        else if teamName == "1610612763" {
+            newTeamName = "MEM"
+        }
+        else if teamName == "1610612748" {
+            newTeamName = "MIA"
+        }
+        else if teamName == "1610612749" {
+            newTeamName = "MIL"
+        }
+        else if teamName == "1610612750" {
+            newTeamName = "MIN"
+        }
+        else if teamName == "1610612740" {
+            newTeamName = "NOP"
+        }
+        else if teamName == "1610612752" {
+            newTeamName = "NYK"
+        }
+        else if teamName == "1610612760" {
+            newTeamName = "OKC"
+        }
+        else if teamName == "1610612753" {
+            newTeamName = "ORL"
+        }
+        else if teamName == "1610612755" {
+            newTeamName = "PHI"
+        }
+        else if teamName == "1610612756" {
+            newTeamName = "PHX"
+        }
+        else if teamName == "1610612757" {
+            newTeamName = "POR"
+        }
+        else if teamName == "1610612758" {
+            newTeamName = "SAC"
+        }
+        else if teamName == "1610612759" {
+            newTeamName = "SAS"
+        }
+        else if teamName == "1610612761" {
+            newTeamName = "TOR"
+        }
+        else if teamName == "1610612762" {
+            newTeamName = "UTA"
+        }
+        else if teamName == "1610612764" {
+            newTeamName = "WAS"
+        }
+        return newTeamName
     }
     
     func mappedValues(teamName: String) -> String {

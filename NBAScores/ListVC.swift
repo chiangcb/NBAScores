@@ -19,10 +19,15 @@ class ListVC: UIViewController {
         tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func backButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "GoBack", sender: nil)
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GetBoxscore" {
+            let dest = segue.destination as! DetailViewController
+            let index = tableView.indexPathForSelectedRow!.row
+            dest.game = gamesArray[index]
+        }
     }
+
 }
 
 extension ListVC: UITableViewDelegate, UITableViewDataSource {
